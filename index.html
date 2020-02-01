@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+
+        <div class='section'>
+            <div class='block' id='water'></div>
+            <div class='button back-button' onclick='scrollBack(1)'>Back</div>
+            <div class='button' onclick='scrollForward(2)'>Begin</div>
+        </div><!--
+
+        --><div class='section' id='section2'>
+            <div class='block' id='air'></div>
+            <div class='button back-button' onclick='scrollBack(1)'>Back</div>
+            <div class='button' onclick='scrollForward(1)'>Contine</div>
+        </div><!--
+
+        --><div class='section' id='section2'>
+            <div class='block' id='life'></div>
+            <div class='button back-button' onclick='scrollBack(1)'>Back</div>
+            <div class='button' onclick='scrollForward(1)'>I agree</div>
+        </div><!--
+
+        --><div class='section' id='section2'>
+            <div class='block' id='earth'></div>
+            <div class='button back-button' onclick='scrollBack(1)'>Back</div>
+            <div class='button' onclick='scrollForward(1)'>Continue</div>
+        </div><!--
+
+        --><div class='section' id='section2'>
+            <div class='block' id='fire'></div>
+            <div class='button back-button' onclick='scrollBack(1)'>Back</div>
+            <div class='button' onclick='scrollForward(1)'>Done</div>
+            <div class='button' onclick='scrollToTop()'>Reset</div>
+        </div>        
+
+    </body>
+    <script>
+
+        var windowWidth = window.innerWidth;
+        var bodyWidth = document.getElementsByTagName('BODY')[0].style.width;
+
+        function scrollForward(times) {
+            for(i=0; i<times; i++) {
+                window.scrollBy(windowWidth, 0);
+                console.log('Scrolled Left')
+            }
+        }
+
+        function scrollBack(times) {
+            for(i=0; i<times; i++) {
+                window.scrollBy(-windowWidth, 0);
+                console.log('Scrolled Right')
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+
+    </script>
+</html>

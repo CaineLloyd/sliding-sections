@@ -1,0 +1,94 @@
+html {
+    scroll-behavior: smooth;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar { width: 0 !important }
+
+body {
+    text-align: left;
+    background-color: #F1F1F1;
+    overflow-y: hidden;
+    width: 500vw;
+    height: 100vh;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.section {
+    display: inline-block;
+    text-align: center;
+    width: 80vw;
+    height: 96vh;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+}
+
+.block {
+    display: inline-block;
+    height: 40%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+}
+
+.button {
+    margin: 1vw;
+    width: 20vw;
+    display: inline-block;
+    background-color: green;
+    height: 5vw;
+    line-height: 5vw;
+    color: white;
+    font-size: 2vw;
+    border-radius: 5vw;
+}
+
+.button:hover {
+    background-color: darkgreen;
+    user-select: none;
+}
+
+.back-button {
+    background-color: red;
+}
+
+.back-button:hover {
+    background-color: darkred;
+}
+
+
+#fire {
+    background-image: url('https://i.imgur.com/4CmwovZ.jpg');
+}
+
+#water {
+    background-image: url('https://i.imgur.com/iIzgS1n.jpg');
+}
+
+#life {
+    background-image: url('https://i.imgur.com/LiNGx9x.jpg');
+}
+
+#air {
+    background-image: url('https://i.imgur.com/wmiZznC.jpg');
+}
+
+#earth {
+    background-image: url('https://i.imgur.com/K1RAriB.jpg');
+}
+
